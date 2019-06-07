@@ -3,9 +3,9 @@ i didn't find a lot of examples about connecting more than 2 controllers in code
 as codesys has its own standards i cant show the source code directly. you can download the project and import it (i'll upload some snapshots here btw).
 
 this project has been tested on codesys V3.5 SP12 patch 4.
-there shouldn't be any conflicts when importing the project but you might be having some issues whenever trying to lunch the simulation over a different codesys version. in this case i suggest you to create a new project in another codesys window, create all the files and copy the code directly from your previous codesys window: that should fix the problem.
+there shouldn't be any conflicts when importing the project but you might have some issues when trying to launch the simulation over a different codesys version. in this case i suggest you to create a new project in another codesys window, create all the files and copy the code directly from your previous codesys environment: that should fix the problem.
 
-in this simulation the main controller is handling all the little entities like buttons, scanners, etc but it's also communicating with the second controller. second controller's task is to move correctly the position of the arm and open/close the robotic hand.
+in this simulation the main controller is handling all the little entities like buttons, scanners, etc but it's also communicating with the second controller. second controller's task is to correctly move the position of the arm and open/close the robotic hand.
 
 the project has a 3-layers depth so that main controller has to be able to read data coming up from the robotic arm throught the second controller.
 
@@ -19,7 +19,7 @@ there's a graphic interface where you can handle the inputs for
 4. the scan ID (the arm checks if the item is the same of (3)
 5. reset button, in case of error
 
-error are raised whenever:
+errors are raised whenever:
 1. start button is pressed and no items are detected
 2. scan code differs from item ID
 
