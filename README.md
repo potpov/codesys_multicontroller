@@ -1,3 +1,5 @@
+# overview
+
 i didn't find a lot of examples about connecting more than 2 controllers in codesys, so i thought someone might be finding this useful.
 
 as codesys has its own standards i cant show the source code directly. you can download the project and import it (i'll upload some snapshots here btw).
@@ -11,6 +13,7 @@ the project has a 3-layers depth so that main controller has to be able to read 
 
 above you can find some snaps, the demo video and the Whole State-Chart for this project.
 
+# GUI and errors
 just a little note about errors:
 there's a graphic interface where you can handle the inputs for 
 1. the "weight system" (which should check if there's a new item on the supply chain)
@@ -23,6 +26,12 @@ errors are raised whenever:
 1. start button is pressed and no items are detected
 2. scan code differs from item ID
 
+# credits
+
+this work was presented as final project for the "industrial and automotive" class at university of Modena.
+theory behing this code can be found on this paper: https://www.sciencedirect.com/science/article/pii/S2351978917304122
+
+# snapshots and demo
 Whole State-Chart
 
 ![alt text](https://ibin.co/4jnbh1GERq1e.jpg)
